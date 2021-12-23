@@ -1,0 +1,25 @@
+<div class="alert alert-info" *ngIf="!pais; else DivPais">
+    Espere por favor...
+</div>
+
+<ng-template #DivPais>
+    <div class="row">
+        <div class="col-12">
+            <h1>Pais: <small>{{ pais.name }}</small></h1> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <h3>Información</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Capital: </strong>{{ pais.capital }}</li>
+                <li class="list-group-item"><strong>Región: </strong>{{ pais.region }}</li>
+            </ul>
+        </div>
+    </div>
+    <pre class="mt-5">
+        {{ pais | json }}
+    </pre>
+</ng-template>
+

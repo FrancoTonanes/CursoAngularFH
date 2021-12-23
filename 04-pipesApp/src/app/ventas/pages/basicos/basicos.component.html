@@ -1,0 +1,78 @@
+<div class="text-layout">
+    <h1>Pipes Básicos</h1>
+    <p>
+        Pipes incluidos en angular - Usualmente en el Common Module
+    </p>
+</div>
+<!-- QUIRARON EL p-grid y p-col-4 en la migration-->
+<div class="grid">
+    <div class="col-4">
+        <p-card header="uppercase">
+            1
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card>
+            2
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card>
+            3
+        </p-card>
+    </div>
+
+</div>
+
+<div class="text-layout">
+    <h1>Date | Fecha</h1>
+    <p>
+        Pipes incluidos en angular - Usualmente en el Common Module
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li>Fecha</li>
+                <li>Fecha | date </li>
+                <li>Fecha | date : 'short' </li>
+                <li>Fecha | date : 'medium' </li>
+                <li>Fecha | date : 'long' </li>
+                <li>Fecha | date : 'full' </li>
+                <li>Fecha | date : 'shortDate' </li>
+                <li>Fecha | date : 'longDate' </li>
+                <hr>
+                <li>Fecha | date : 'short' : 'GMT-6' </li>
+                <li>Fecha | date : 'short' : 'GMT+3' </li>
+            </ul>
+            <ul>
+                Personalizados
+                <li>Fecha | date : 'h:mm a' </li>
+            </ul>
+            
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li>{{ fecha }}</li>
+                <li>{{ fecha | date }}</li>
+                <li>{{ fecha | date : 'short' }}</li>
+                <li>{{ fecha | date : 'medium' }}</li>
+                <li>{{ fecha | date : 'long' }}</li>
+                <li>{{ fecha | date : 'full' }}</li>
+                <li>{{ fecha | date : 'shortDate' }}</li>
+                <li>{{ fecha | date : 'longDate' }}</li>
+                <hr>
+                <li>{{ fecha | date : 'short' : 'GMT-6' }}</li>
+                <li>{{ fecha | date : 'short' : 'GMT+3' }}</li>
+            </ul>  
+            <ul>
+                <br>
+                <li>{{ fecha | date : 'h:mm a' }}</li>
+            </ul>          
+        </p-card>
+    </div>
+</div>
